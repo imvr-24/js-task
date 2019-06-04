@@ -1,6 +1,5 @@
 const inputVal = (id) => {
     console.log(id);
-    // document.calc.result.value += id;
     document.querySelector('.text-right').value += id;
 };
 
@@ -10,8 +9,10 @@ const clearScreen = () => {
 
 const calculate = () => {
     try {
-        var input = eval(document.querySelector('.text-right').value);
-        document.querySelector('.text-right').value = input;
+        const inputString = document.querySelector('.text-right').value;
+        var inputFunc = new Function(`return ${inputString}`)();
+        console.log(inputFunc);
+        document.querySelector('.text-right').value = inputFunc;
     } catch (err) {
         document.querySelector('.text-right').value = "Error";
     }
