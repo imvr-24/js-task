@@ -12,52 +12,51 @@
 
 <body>
 
-    <div class="container text-center outer" id="calc">
-            <div class="col-md-3 text-center bg-custom mt-5 p-5 "></div>
-        <div class="calcBG text-center">
-            <div class="row" id="result">
-                <form name="calc">
-                    <input type="text" class="screen text-right" name="result" readonly>
-                </form>
-            </div>
-            <div class="row">
-                <button id="allClear" type="button" class="btn btn-danger">AC</button>
-                <button id="clear" type="button" class="btn btn-warning">CE</button>
-                <button id="%" type="button" class="btn btn-info" onclick="inputVal(id)">%</button>
-                <button id="/" type="button" class="btn btn-info" onclick="inputVal(id)">÷</button>
-            </div>
-            <div class="row">
-                <button id="7" type="button" class="btn btn-info" onclick="inputVal(id)">7</button>
-                <button id="8" type="button" class="btn btn-info" onclick="inputVal(id)">8</button>
-                <button id="9" type="button" class="btn btn-info" onclick="inputVal(id)">9</button>
-                <button id="*" type="button" class="btn btn-info" onclick="inputVal(id)">x</button>
-            </div>
-            <div class="row">
-                <button id="4" type="button" class="btn btn-info" onclick="inputVal(id)">4</button>
-                <button id="5" type="button" class="btn btn-info" onclick="inputVal(id)">5</button>
-                <button id="6" type="button" class="btn btn-info" onclick="inputVal(id)">6</button>
-                <button id="-" type="button" class="btn btn-info" onclick="inputVal(id)">-</button>
-            </div>
-            <div class="row">
-                <button id="1" type="button" class="btn btn-info" onclick="inputVal(id)">1</button>
-                <button id="2" type="button" class="btn btn-info" onclick="inputVal(id)">2</button>
-                <button id="3" type="button" class="btn btn-info" onclick="inputVal(id)">3</button>
-                <button id="+" type="button" class="btn btn-info" onclick="inputVal(id)">+</button>
-            </div>
-            <div class="row">
-                <button id="0" type="button" class="btn btn-info" onclick="inputVal(id)">0</button>
-                <button id="." type="button" class="btn btn-info" onclick="inputVal(id)">.</button>
-                <button id="equals" type="button" class="btn btn-success">=</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4.5 mx-auto text-center bg-secondary mt-5 p-5">
+                <div class="text-center">
+                    <div class="row" id="result">
+                        <form name="calc">
+                            <input type="text" class="op__area text-right" name="result" disabled>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <button id="allClear" type="button" class="btn btn-danger">AC</button>
+                        <button id="clear" type="button" class="btn btn-warning">CE</button>
+                        <button id="%" type="button" class="btn btn-info input__query">%</button>
+                        <button id="/" type="button" class="btn btn-info input__query">÷</button>
+                    </div>
+                    <div class="row">
+                        <button id="7" type="button" class="btn btn-info input__query">7</button>
+                        <button id="8" type="button" class="btn btn-info input__query">8</button>
+                        <button id="9" type="button" class="btn btn-info input__query">9</button>
+                        <button id="*" type="button" class="btn btn-info input__query">x</button>
+                    </div>
+                    <div class="row">
+                        <button id="4" type="button" class="btn btn-info input__query">4</button>
+                        <button id="5" type="button" class="btn btn-info input__query">5</button>
+                        <button id="6" type="button" class="btn btn-info input__query">6</button>
+                        <button id="-" type="button" class="btn btn-info input__query">-</button>
+                    </div>
+                    <div class="row">
+                        <button id="1" type="button" class="btn btn-info input__query">1</button>
+                        <button id="2" type="button" class="btn btn-info input__query">2</button>
+                        <button id="3" type="button" class="btn btn-info input__query">3</button>
+                        <button id="+" type="button" class="btn btn-info input__query">+</button>
+                    </div>
+                    <div class="row">
+                        <button id="0" type="button" class="btn btn-info input__query">0</button>
+                        <button id="." type="button" class="btn btn-info input__query">.</button>
+                        <button id="equals" type="button" class="btn btn-success">=</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <script src="./script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+
 </body>
 
 </html>

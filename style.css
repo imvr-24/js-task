@@ -1,25 +1,26 @@
-input {
-    border: none;
-}
 
-button {
+/* @import url("./bootstrap.min.css"); */
+
+button[type=button] {
     height: 50px;
     width: 50px;
-    margin: 10px 4px;
-    box-shadow: inset 1px 1px 50px #0066FF;
-    border: none !important;
 }
 
-.screen {
+button:first-child {
+    margin-left: 25px;
+}
+
+.op__area {
     height: 40px;
     border-radius: 10px;
-    padding: 10px;
-    margin: 10px 2px;
+    padding: 20px;
+    margin: 20px 1px;
     font-size: 16px;
     font-weight: bold;
     border: 1px solid #0093b1;
 }
 
-/* .outer {
-    background: #e3e3e3;
-} */
+
+.text-center {
+    border-radius: 10px;
+}
